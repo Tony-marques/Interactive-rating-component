@@ -1,0 +1,105 @@
+.view1 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    180deg,
+    darken($DarkBlue, 2%) 0%,
+    darken($DarkBlue, 8%) 100%
+  );
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  @include sm {
+    width: 325px;
+    height: 400px;
+    // background: red;
+  }
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $orange;
+    background: $DarkBlue;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    @include sm {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  h1 {
+    color: $White;
+  }
+
+  p {
+    font-size: 15px;
+    color: $MediumGrey;
+    @include sm {
+      font-size: 0.9rem;
+    }
+  }
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+
+    input[type="radio"] {
+      display: none;
+    }
+    input[type="radio"]:checked ~ label {
+      background: $LightGrey;
+      color: $White;
+    }
+
+    label {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: $DarkBlue;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      color: $MediumGrey;
+      font-weight: 700;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      @include sm {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+      }
+      &:hover {
+        background: $orange;
+        color: $White;
+      }
+    }
+  }
+  .btn-container {
+    display: flex;
+
+    button {
+      cursor: pointer;
+      background: $orange;
+      width: 100%;
+      border-radius: 50px;
+      border: none;
+      padding: 1rem;
+      color: $White;
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      transition: 0.3s all;
+
+      &:hover {
+        background: $White;
+        color: $orange;
+      }
+    }
+  }
+}

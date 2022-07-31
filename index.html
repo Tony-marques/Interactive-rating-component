@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="./js/index.js" defer></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <div class="view1 visible">
+          <i class="fa-solid fa-star"></i>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="input-container">
+            <div class="input-group">
+              <input type="radio" id="un" name="note" class="note" value="1" />
+              <label for="un">1</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="radio"
+                id="deux"
+                name="note"
+                class="note"
+                value="2"
+              />
+              <label for="deux">2</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="radio"
+                id="trois"
+                name="note"
+                class="note"
+                value="3"
+              />
+              <label for="trois">3</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="radio"
+                id="quatre"
+                name="note"
+                class="note"
+                value="4"
+              />
+              <label for="quatre">4</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="radio"
+                id="cinq"
+                name="note"
+                class="note"
+                value="5"
+              />
+              <label for="cinq">5</label>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button id="btn-submit">Submit</button>
+          </div>
+        </div>
+        <div class="view2">
+          <img src="./images/illustration-thank-you.svg" alt="" />
+          <p class="result-note">You selected 4 out of 5</p>
+          <h1>Thank you!</h1>
+          <p class="paragraphe">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

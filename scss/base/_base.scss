@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background: $VeryDarkBlue;
+  // border: 4px solid blue;
+  font-family: "Overpass", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  main {
+  }
+}
+
+.visible {
+  display: flex !important;
+}
